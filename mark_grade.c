@@ -12,7 +12,7 @@ int main()
 		int crd[20];
 	}s1;
 	int i;
-	float tot=0,tot_crd=0,cgpa=0;
+	float tot=0,tot_crd=0,sgpa=0;
 	clrscr();
 	printf("Enter the name of student : \n");
 	scanf("%s",s1.name);
@@ -32,8 +32,8 @@ int main()
 	{ tot=tot+(mark_grd(s1.mark[i])*s1.crd[i]);
 	  tot_crd=tot_crd+s1.crd[i];
 	}
-	cgpa=tot/tot_crd;
-	printf("CGPA	: %.1f",cgpa);
+	sgpa=tot/tot_crd;
+	printf("SGPA	: %.1f",sgpa);
 	getch();
 	return 0;
 }
