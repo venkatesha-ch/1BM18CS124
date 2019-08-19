@@ -4,17 +4,19 @@
 
 int main()
 {
-int mark,age;
+struct
+{int mark,age;
 char name[20];
+}s1;
 clrscr();
 printf("Enter the name : ");
-scanf("%s",name);
+scanf("%s",s1.name);
 printf("Enter the age and marks : ");
-scanf("%d%d",&age,&mark);
-if((mark >=65 && mark <= 100) && (age>20))
-         printf("Student %s qualified for admission",name);
+scanf("%d%d",&s1.age,&s1.mark);
+if((s1.mark >=65 && s1.mark <= 100) && (s1.age>20))
+         printf("Student %s qualified for admission",s1.name);
 else 
-printf("Student %s  NOT qualified for admission",name);
+printf("Student %s  NOT qualified for admission",s1.name);
 getch();
 return 0;
 }
