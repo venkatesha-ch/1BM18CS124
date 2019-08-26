@@ -1,9 +1,10 @@
 #include<stdio.h>
-
+#include<conio.h>
 int main()
 {
 int front=-1,rear=-1,choice,queue[10],i,item;
 int max=3;
+clrscr();
 do
   {
 	printf("Enter 1 for insert\nEnter 2 for delete\nEnter 3 for display\nEnter other to exit\n");
@@ -44,5 +45,6 @@ do
 		break;
 	}
   }while(choice==1||choice==2||choice==3);
+getch();
 return 0;
 }
