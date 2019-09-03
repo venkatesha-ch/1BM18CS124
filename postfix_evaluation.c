@@ -13,7 +13,7 @@ double pop()
 	else
 	{	item = stack[top];
 		top=top-1;
-		printf("poped\n");
+		
 	}
 	return item;
 }
@@ -23,7 +23,7 @@ void push(double item)
 	if(top>=max-1)
 		printf("Stack over flow \n");
 	else
-	{printf("pushed \n");
+	{
 		top=top+1;
 		stack[top]=item;
 	}
@@ -44,12 +44,14 @@ void push(double item)
 			switch(ch)
 			{
 				case '*':res=b*a;
+					break;
 				case '+':res=b+a;
+					break;
 				case '-':res=b-a;
+					break;
 				case '/':res=(b/a);
 			}
 		push(res);
-		printf("%f\n",res);
 		}
 		else 
 		{if (isdigit(ch))
@@ -57,7 +59,7 @@ void push(double item)
                         push(ch-'0');
 		}
 	}
-	printf("Result = %f",pop());
+	printf("Result = %.2f",pop());
 }
 int main()
 {
