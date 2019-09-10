@@ -58,18 +58,17 @@ void main()
   int n, top=-1,stack[size];
   do
    {
-      printf("1.insert \n 2. delete\n 3.display \n 4.exit\n");
+      printf("1.insert \n  2.display \n 3.exit\n");
   scanf("%d",&n);
   switch(n)
   {case 1:push(&top,stack);
           break;
-   case 2 :pop(&top,stack);
+    case 2: display(&top,stack);
          break;
-    case 3: display(&top,stack);
-         break;
-    case 4 :break;
+    case 3 :break;
     default: printf ("enter correct option");
   }
-   }while(n!=4);
+   }while(n!=3);
+printf("Thank you ");
  getch();
 }
